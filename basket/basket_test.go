@@ -56,7 +56,7 @@ func InitializeScenario(ctx *godog.ScenarioContext) {
 	})
 
 	ctx.Step(`^I add the "([^"]*)" to the basket$`, sh.addProductToBasket)
-	ctx.Step(`^I should have (\d+) product\(s\) in the basket$`, sh.iShouldHaveProductsInTheBasket)
+	ctx.Step(`^I should have (\d+) products? in the basket$`, sh.iShouldHaveProductsInTheBasket)
 	ctx.Step(`^the overall basket price should be €(\d+)$`, sh.theOverallBasketPriceShouldBe)
 	ctx.Step(`^there is a "([^"]*)", which costs €(\d+)$`, sh.addProductToShelf)
 }
