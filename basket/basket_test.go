@@ -1,6 +1,9 @@
 package basket
 
-import "github.com/cucumber/godog"
+import (
+	"fmt"
+	"github.com/cucumber/godog"
+)
 
 // based upon: https://semaphoreci.com/community/tutorials/how-to-use-godog-for-behavior-driven-development-in-go
 
@@ -15,12 +18,27 @@ func (sh *shopping) addProductToBasket(productName string) error {
 	return nil
 }
 
-func (sh *shopping) iShouldHaveProductsInTheBasket(nrOfProductsInBasket int) error {
-	return godog.ErrPending
+func (sh *shopping) iShouldHaveProductsInTheBasket(productCount int) error {
+	if sh.basket.GetBasketSize() != productCount {
+		return fmt.Errorf(
+			"expected %d products but there are %d",
+			sh.basket.GetBasketSize(),
+			productCount,
+		)
+	}
+
+	return nil
 }
 
-func (sh *shopping) theOverallBasketPriceShouldBe(overallPrice int) error {
-	return godog.ErrPending
+func (sh *shopping) theOverallBasketPriceShouldBe(basketTotal float64) error {
+	if sh.basket.GetBasketTotal() != basketTotal {
+		return fmt.Errorf(
+			"expected basket total to be %.2f but it is %.2f",
+			basketTotal,
+			sh.basket.GetBasketTotal(),
+			)
+	}
+	return nil
 }
 
 func (sh *shopping) addProductToShelf(product string, price float64) (err error) {
