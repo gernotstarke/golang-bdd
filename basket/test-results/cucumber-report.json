@@ -1,0 +1,221 @@
+[
+    {
+        "uri": "features/basket.feature",
+        "id": "product-basket",
+        "keyword": "Feature",
+        "name": "Product basket",
+        "description": "  In order to buy products\n  As a customer\n  I need to be able to put interesting product(s) into a basket\n\n  Rules:\n  - VAT is 20%\n  - Delivery for basket under €10 is €3\n  - Delivery for basket over €10 is €2",
+        "line": 4,
+        "comments": [
+            {
+                "value": "# taken from https://docs.behat.org/en/v3.0/quick_start.html",
+                "line": 1
+            },
+            {
+                "value": "#",
+                "line": 2
+            }
+        ],
+        "elements": [
+            {
+                "id": "product-basket;buying-a-single-product-over-€10",
+                "keyword": "Scenario",
+                "name": "Buying a single product over €10",
+                "description": "",
+                "line": 14,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "there is a \"Sith Lord Lightsaber\", which costs €15",
+                        "line": 15,
+                        "match": {
+                            "location": "basket_test.go:44"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 106798
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "I add the \"Sith Lord Lightsaber\" to the basket",
+                        "line": 16,
+                        "match": {
+                            "location": "basket_test.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 46000
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "I should have 1 product in the basket",
+                        "line": 17,
+                        "match": {
+                            "location": "basket_test.go:21"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 57229
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "name": "the overall basket price should be €20",
+                        "line": 18,
+                        "match": {
+                            "location": "basket_test.go:33"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 55850
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "product-basket;buying-a-single-product-under-€10",
+                "keyword": "Scenario",
+                "name": "Buying a single product under €10",
+                "description": "",
+                "line": 20,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "there is a \"Sith Lord Lightsaber\", which costs €5",
+                        "line": 21,
+                        "match": {
+                            "location": "basket_test.go:44"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 42025
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "I add the \"Sith Lord Lightsaber\" to the basket",
+                        "line": 22,
+                        "match": {
+                            "location": "basket_test.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 44519
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "I should have 1 product in the basket",
+                        "line": 23,
+                        "match": {
+                            "location": "basket_test.go:21"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 53324
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "name": "the overall basket price should be €9",
+                        "line": 24,
+                        "match": {
+                            "location": "basket_test.go:33"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 45853
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "product-basket;buying-two-products-over-€10",
+                "keyword": "Scenario",
+                "name": "Buying two products over €10",
+                "description": "",
+                "line": 26,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "there is a \"Sith Lord Lightsaber\", which costs €10",
+                        "line": 27,
+                        "match": {
+                            "location": "basket_test.go:44"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 38767
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "name": "there is a \"Jedi Lightsaber\", which costs €5",
+                        "line": 28,
+                        "match": {
+                            "location": "basket_test.go:44"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 44338
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "I add the \"Sith Lord Lightsaber\" to the basket",
+                        "line": 29,
+                        "match": {
+                            "location": "basket_test.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 38554
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "name": "I add the \"Jedi Lightsaber\" to the basket",
+                        "line": 30,
+                        "match": {
+                            "location": "basket_test.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 34079
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "I should have 2 products in the basket",
+                        "line": 31,
+                        "match": {
+                            "location": "basket_test.go:21"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 33199
+                        }
+                    },
+                    {
+                        "keyword": "And ",
+                        "name": "the overall basket price should be €21",
+                        "line": 32,
+                        "match": {
+                            "location": "basket_test.go:33"
+                        },
+                        "result": {
+                            "status": "failed",
+                            "error_message": "expected basket total to be 21.00 but it is 20.00",
+                            "duration": 47406
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
