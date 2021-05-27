@@ -7,7 +7,7 @@ Playground to evaluate _Behaviour Driven Development_ tools for Golang:
 * [cucumber-html-reporter](https://www.npmjs.com/package/cucumber-html-reporter)
 * (commercial) Cucumber-Studio
 
-The current report should be available [here](test-results/cucumber_report.htmlwhich go)
+The current report should be available [here](test-results/cucumber_report.html)
 
 ## Installation
 
