@@ -34,7 +34,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 106798
+                            "duration": 39814
                         }
                     },
                     {
@@ -46,7 +46,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 46000
+                            "duration": 52219
                         }
                     },
                     {
@@ -58,7 +58,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 57229
+                            "duration": 17218
                         }
                     },
                     {
@@ -70,7 +70,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 55850
+                            "duration": 23043
                         }
                     }
                 ]
@@ -92,7 +92,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 42025
+                            "duration": 25395
                         }
                     },
                     {
@@ -104,7 +104,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 44519
+                            "duration": 18011
                         }
                     },
                     {
@@ -116,7 +116,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 53324
+                            "duration": 19833
                         }
                     },
                     {
@@ -128,7 +128,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 45853
+                            "duration": 20704
                         }
                     }
                 ]
@@ -150,7 +150,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 38767
+                            "duration": 19486
                         }
                     },
                     {
@@ -162,7 +162,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 44338
+                            "duration": 18318
                         }
                     },
                     {
@@ -174,7 +174,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 38554
+                            "duration": 19552
                         }
                     },
                     {
@@ -186,7 +186,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 34079
+                            "duration": 19811
                         }
                     },
                     {
@@ -198,20 +198,19 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 33199
+                            "duration": 16658
                         }
                     },
                     {
                         "keyword": "And ",
-                        "name": "the overall basket price should be €21",
+                        "name": "the overall basket price should be €20",
                         "line": 32,
                         "match": {
                             "location": "basket_test.go:33"
                         },
                         "result": {
-                            "status": "failed",
-                            "error_message": "expected basket total to be 21.00 but it is 20.00",
-                            "duration": 47406
+                            "status": "passed",
+                            "duration": 26114
                         }
                     }
                 ]

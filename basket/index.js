@@ -1,19 +1,22 @@
 var reporter = require('cucumber-html-reporter');
 
+var os = require('os');
+
+//var reporter_theme = 'hierarchy'
+var reporter_theme = 'bootstrap'
+
 var options = {
-    theme: 'bootstrap',
+    theme: reporter_theme,
     jsonFile: 'test-results/cucumber-report.json',
     output: 'test-results/cucumber_report.html',
+    brandTitle: 'golang-bdd Cucumber Report',
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
     launchReport: true,
     metadata: {
-        "App Version":"0.3.2",
-        "Test Environment": "STAGING",
-        "Browser": "Firefox  88.0 (64-Bit)",
-        "Platform": "OSX",
-        "Parallel": "Scenarios",
-        "Executed": "Remote"
+        "Platform": os.platform() + "-" + os.release(),
+        "Executed": new Date(),
+        "Theme": reporter_theme
     }
 };
 

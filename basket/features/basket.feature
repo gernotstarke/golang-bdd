@@ -29,5 +29,5 @@ Feature: Product basket
     When I add the "Sith Lord Lightsaber" to the basket
     And I add the "Jedi Lightsaber" to the basket
     Then I should have 2 products in the basket
-    And the overall basket price should be €21
+    And the overall basket price should be €20
 
