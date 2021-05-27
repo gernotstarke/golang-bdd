@@ -1,16 +1,17 @@
-package basket
+package main
 
 import (
 	"fmt"
 	"github.com/cucumber/godog"
+	"godog-bdd/basket"
 )
 
 // based upon: https://semaphoreci.com/community/tutorials/how-to-use-godog-for-behavior-driven-development-in-go
 
 // shelf to store articles that are available for shopping
 type shopping struct {
-	shelf  *Shelf
-	basket *Basket
+	shelf  *basket.Shelf
+	basket *basket.Basket
 }
 
 func (sh *shopping) addProductToBasket(productName string) error {
@@ -46,13 +47,14 @@ func (sh *shopping) addProductToShelf(product string, price float64) (err error)
 	return nil
 }
 
+
 func InitializeScenario(ctx *godog.ScenarioContext) {
 	sh := &shopping{}
 
 	// runs before a scenario is tested
 	ctx.BeforeScenario(func(*godog.Scenario) {
-		sh.shelf = NewShelf()
-		sh.basket = NewBasket()
+		sh.shelf = basket.NewShelf()
+		sh.basket = basket.NewBasket()
 	})
 
 	ctx.Step(`^I add the "([^"]*)" to the basket$`, sh.addProductToBasket)
@@ -60,3 +62,4 @@ func InitializeScenario(ctx *godog.ScenarioContext) {
 	ctx.Step(`^the overall basket price should be €(\d+)$`, sh.theOverallBasketPriceShouldBe)
 	ctx.Step(`^there is a "([^"]*)", which costs €(\d+)$`, sh.addProductToShelf)
 }
+

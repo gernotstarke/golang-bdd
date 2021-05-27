@@ -2,6 +2,7 @@
 
 echo on
 
+
 # COMMIT_ID=$(git rev-parse --verify HEAD)
 
 godog --format cucumber:test-results/cucumber-report.json

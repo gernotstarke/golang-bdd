@@ -1,4 +1,4 @@
-package math_bdd
+package math
 
 var Param1 int
 var Result int

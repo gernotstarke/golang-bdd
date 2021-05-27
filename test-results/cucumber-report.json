@@ -1,5 +1,107 @@
 [
     {
+        "uri": "features/math.feature",
+        "id": "addition",
+        "keyword": "Feature",
+        "name": "Addition",
+        "description": "",
+        "line": 1,
+        "elements": [
+            {
+                "id": "addition;1-+-0",
+                "keyword": "Scenario",
+                "name": "1 + 0",
+                "description": "",
+                "line": 2,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "I start with 1",
+                        "line": 3,
+                        "match": {
+                            "location": "math_test.go:25"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 10909
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "I add 0",
+                        "line": 4,
+                        "match": {
+                            "location": "math_test.go:13"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 17437
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "I end up with 1",
+                        "line": 5,
+                        "match": {
+                            "location": "math_test.go:17"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 19012
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "addition;1-+-1",
+                "keyword": "Scenario",
+                "name": "1 + 1",
+                "description": "",
+                "line": 7,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "I start with 1",
+                        "line": 8,
+                        "match": {
+                            "location": "math_test.go:25"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 10742
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "I add 1",
+                        "line": 9,
+                        "match": {
+                            "location": "math_test.go:13"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 27989
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "I end up with 2",
+                        "line": 10,
+                        "match": {
+                            "location": "math_test.go:17"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 17621
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "uri": "features/basket.feature",
         "id": "product-basket",
         "keyword": "Feature",
@@ -30,11 +132,11 @@
                         "name": "there is a \"Sith Lord Lightsaber\", which costs €15",
                         "line": 15,
                         "match": {
-                            "location": "basket_test.go:44"
+                            "location": "basket_test.go:45"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 39814
+                            "duration": 33813
                         }
                     },
                     {
@@ -42,11 +144,11 @@
                         "name": "I add the \"Sith Lord Lightsaber\" to the basket",
                         "line": 16,
                         "match": {
-                            "location": "basket_test.go:16"
+                            "location": "basket_test.go:17"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 52219
+                            "duration": 22889
                         }
                     },
                     {
@@ -54,11 +156,11 @@
                         "name": "I should have 1 product in the basket",
                         "line": 17,
                         "match": {
-                            "location": "basket_test.go:21"
+                            "location": "basket_test.go:22"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 17218
+                            "duration": 20487
                         }
                     },
                     {
@@ -66,11 +168,11 @@
                         "name": "the overall basket price should be €20",
                         "line": 18,
                         "match": {
-                            "location": "basket_test.go:33"
+                            "location": "basket_test.go:34"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 23043
+                            "duration": 18616
                         }
                     }
                 ]
@@ -88,11 +190,11 @@
                         "name": "there is a \"Sith Lord Lightsaber\", which costs €5",
                         "line": 21,
                         "match": {
-                            "location": "basket_test.go:44"
+                            "location": "basket_test.go:45"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 25395
+                            "duration": 16745
                         }
                     },
                     {
@@ -100,11 +202,11 @@
                         "name": "I add the \"Sith Lord Lightsaber\" to the basket",
                         "line": 22,
                         "match": {
-                            "location": "basket_test.go:16"
+                            "location": "basket_test.go:17"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 18011
+                            "duration": 13704
                         }
                     },
                     {
@@ -112,11 +214,11 @@
                         "name": "I should have 1 product in the basket",
                         "line": 23,
                         "match": {
-                            "location": "basket_test.go:21"
+                            "location": "basket_test.go:22"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 19833
+                            "duration": 29983
                         }
                     },
                     {
@@ -124,11 +226,11 @@
                         "name": "the overall basket price should be €9",
                         "line": 24,
                         "match": {
-                            "location": "basket_test.go:33"
+                            "location": "basket_test.go:34"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 20704
+                            "duration": 19508
                         }
                     }
                 ]
@@ -146,11 +248,11 @@
                         "name": "there is a \"Sith Lord Lightsaber\", which costs €10",
                         "line": 27,
                         "match": {
-                            "location": "basket_test.go:44"
+                            "location": "basket_test.go:45"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 19486
+                            "duration": 19870
                         }
                     },
                     {
@@ -158,11 +260,11 @@
                         "name": "there is a \"Jedi Lightsaber\", which costs €5",
                         "line": 28,
                         "match": {
-                            "location": "basket_test.go:44"
+                            "location": "basket_test.go:45"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 18318
+                            "duration": 26115
                         }
                     },
                     {
@@ -170,11 +272,11 @@
                         "name": "I add the \"Sith Lord Lightsaber\" to the basket",
                         "line": 29,
                         "match": {
-                            "location": "basket_test.go:16"
+                            "location": "basket_test.go:17"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 19552
+                            "duration": 15279
                         }
                     },
                     {
@@ -182,11 +284,11 @@
                         "name": "I add the \"Jedi Lightsaber\" to the basket",
                         "line": 30,
                         "match": {
-                            "location": "basket_test.go:16"
+                            "location": "basket_test.go:17"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 19811
+                            "duration": 18577
                         }
                     },
                     {
@@ -194,11 +296,11 @@
                         "name": "I should have 2 products in the basket",
                         "line": 31,
                         "match": {
-                            "location": "basket_test.go:21"
+                            "location": "basket_test.go:22"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 16658
+                            "duration": 16225
                         }
                     },
                     {
@@ -206,11 +308,11 @@
                         "name": "the overall basket price should be €20",
                         "line": 32,
                         "match": {
-                            "location": "basket_test.go:33"
+                            "location": "basket_test.go:34"
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 26114
+                            "duration": 19848
                         }
                     }
                 ]
