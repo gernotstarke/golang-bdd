@@ -18,5 +18,11 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '15'
- #     - run: npm install
- #     - run: npm test
+
+      - name install cucumber-html-reporter
+        run npm install cucumber-html-reporter --save-dev
+
+      - name: generate html report from cucumber-test-results
+        run: node index.js
+
+
