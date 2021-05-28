@@ -2,9 +2,9 @@ name: Cucumber (with Godog)
 
 on:
   pull_request:
- # push:
- #   branches:
- #     - "main"
+  push:
+    branches:
+      - "main"
 
 jobs:
   test:
@@ -20,16 +20,17 @@ jobs:
         with:
           go-version: '1.16'
 
+# install and run the godog bdd tooling
       - name: Install Godog
         run: go get github.com/cucumber/godog/cmd/godog@v0.11.0
 
       - name: Execute Cucumber BDD Specifications
         run: godog --format cucumber:test-results/cucumber-report.json
 
+# we need node.js to create the report from the json-results
       - uses: actions/setup-node@v2
         with:
           node-version: '15'
-
 
       - name: install cucumber-html-reporter
         run: npm install cucumber-html-reporter --save-dev
@@ -37,7 +38,10 @@ jobs:
       - name: generate html report from cucumber-test-results
         run: node index.js
 
-      # commit the changed test report
+
+
+# commit the changed test report
+# see https://github.com/stefanzweifel/git-auto-commit-action for details
       - uses: stefanzweifel/git-auto-commit-action@v4
 
         with:
