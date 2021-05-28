@@ -14,7 +14,12 @@ The current report should be available [here](test-results/cucumber_report.html)
 ![cucumber](https://github.com/gernotstarke/golang-bdd/actions/workflows/cucumber.yml/badge.svg)
 ![go_test](https://github.com/gernotstarke/golang-bdd/actions/workflows/go_test.yml/badge.svg)
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gernotstarke/golang-bdd)](https://goreportcard.com/report/github.com/gernotstarke/golang-bdd)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gernotstarke_golang-bdd&metric=alert_status)](https://sonarcloud.io/dashboard?id=gernotstarke_golang-bdd)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c481ef8142826f71ff65/maintainability)](https://codeclimate.com/github/gernotstarke/golang-bdd/maintainability)
 
+#
 ## Installation
 
 ### Godog
