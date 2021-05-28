@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: '15'
 
-      - name install cucumber-html-reporter
-        run npm install cucumber-html-reporter --save-dev
+      - name: install cucumber-html-reporter
+        run: npm install cucumber-html-reporter --save-dev
 
       - name: generate html report from cucumber-test-results
         run: node index.js
