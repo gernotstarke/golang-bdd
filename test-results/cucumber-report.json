@@ -24,7 +24,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 15001
+                            "duration": 11200
                         }
                     },
                     {
@@ -36,7 +36,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 20302
+                            "duration": 15701
                         }
                     },
                     {
@@ -48,7 +48,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 21201
+                            "duration": 20600
                         }
                     }
                 ]
@@ -70,7 +70,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 14601
+                            "duration": 12200
                         }
                     },
                     {
@@ -82,7 +82,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 20802
+                            "duration": 16801
                         }
                     },
                     {
@@ -94,7 +94,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 20902
+                            "duration": 18000
                         }
                     }
                 ]
@@ -136,7 +136,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 31203
+                            "duration": 39200
                         }
                     },
                     {
@@ -148,7 +148,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 26402
+                            "duration": 22500
                         }
                     },
                     {
@@ -160,7 +160,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 27302
+                            "duration": 21100
                         }
                     },
                     {
@@ -172,7 +172,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 23602
+                            "duration": 18300
                         }
                     }
                 ]
@@ -194,7 +194,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 18302
+                            "duration": 17200
                         }
                     },
                     {
@@ -206,7 +206,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 23402
+                            "duration": 19300
                         }
                     },
                     {
@@ -218,7 +218,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 26902
+                            "duration": 17900
                         }
                     },
                     {
@@ -230,7 +230,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 21502
+                            "duration": 21101
                         }
                     }
                 ]
@@ -252,7 +252,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 18401
+                            "duration": 13600
                         }
                     },
                     {
@@ -264,7 +264,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 24802
+                            "duration": 21900
                         }
                     },
                     {
@@ -276,7 +276,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 24903
+                            "duration": 18401
                         }
                     },
                     {
@@ -288,7 +288,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 21901
+                            "duration": 16900
                         }
                     },
                     {
@@ -300,7 +300,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 29403
+                            "duration": 17300
                         }
                     },
                     {
@@ -312,7 +312,60 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 22702
+                            "duration": 17600
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "uri": "features/developer.feature",
+        "id": "syntactic-checks-on-feature-files",
+        "keyword": "Feature",
+        "name": "Syntactic Checks on Feature files",
+        "description": "  In order to develop the system\n  As a developer\n  I want regular syntax checks of our feature files\n\n  Rules:\n  - See https://www.npmjs.com/package/gherkin-lint#configuration-file",
+        "line": 1,
+        "elements": [
+            {
+                "id": "syntactic-checks-on-feature-files;creating-an-regular-given-when-then-scenario",
+                "keyword": "Scenario",
+                "name": "Creating an regular given-when-then scenario",
+                "description": "",
+                "line": 9,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "there is a syntactically correct scenario called \"developer\"",
+                        "line": 10,
+                        "match": {
+                            "location": "features/developer.feature:10"
+                        },
+                        "result": {
+                            "status": "undefined"
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "I check the syntax of this scenario",
+                        "line": 11,
+                        "match": {
+                            "location": "features/developer.feature:11"
+                        },
+                        "result": {
+                            "status": "undefined"
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "I should have 0 errors",
+                        "line": 12,
+                        "match": {
+                            "location": "features/developer.feature:12"
+                        },
+                        "result": {
+                            "status": "undefined"
                         }
                     }
                 ]
