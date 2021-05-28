@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+            ref: ${{ github.head_ref }}
       - name: Setup golang
         uses: actions/setup-go@v2
         with:
@@ -26,6 +28,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+        - run: npm install
+        - run: npm test
 
       - name: install cucumber-html-reporter
         run: npm install cucumber-html-reporter --save-dev
@@ -35,6 +39,7 @@ jobs:
 
       # commit the changed test report
       - uses: stefanzweifel/git-auto-commit-action@v4
+
         with:
           # which file(s) to add
           file_pattern: test-results/cucumber-report.*
