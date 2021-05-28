@@ -1,5 +1,6 @@
 # golang-bdd
 
+
 Playground to evaluate _Behaviour Driven Development_ tools for Golang:
 
 * Cucumber BDD
@@ -8,6 +9,10 @@ Playground to evaluate _Behaviour Driven Development_ tools for Golang:
 * (commercial) Cucumber-Studio
 
 The current report should be available [here](test-results/cucumber_report.html)
+
+![cucumber](https://github.com/gernotstarke/golang-bdd/actions/workflows/cucumber.yml/badge.svg)
+![go_test](https://github.com/gernotstarke/golang-bdd/actions/workflows/go_test.yml/badge.svg)
+
 
 ## Installation
 
@@ -21,7 +26,7 @@ go get github.com/cucumber/godog/cmd/godog@v0.11.0
 It's written in JavaScript and requires `npm` and `node` to be available on your machine.
 
 ```shell
-npm install cucumber-html-reporter --save-dev`
+npm install cucumber-html-reporter --save-dev
 ```
 
 ## Usage
