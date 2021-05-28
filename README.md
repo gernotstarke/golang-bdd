@@ -4,12 +4,13 @@
 Playground to evaluate _Behaviour Driven Development_ tools for Golang:
 
 * Cucumber BDD
-* [godog](https://github.com/cucumber/godog), the official Cucumber tool
+* [Godog](https://github.com/cucumber/godog), the official Cucumber tool
 * [cucumber-html-reporter](https://www.npmjs.com/package/cucumber-html-reporter)
 * (commercial) Cucumber-Studio
 
 The current report should be available [here](test-results/cucumber_report.html)
 
+![feature-linter](https://github.com/gernotstarke/golang-bdd/actions/workflows/feature-linter.yml/badge.svg)
 ![cucumber](https://github.com/gernotstarke/golang-bdd/actions/workflows/cucumber.yml/badge.svg)
 ![go_test](https://github.com/gernotstarke/golang-bdd/actions/workflows/go_test.yml/badge.svg)
 
