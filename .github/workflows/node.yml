@@ -1,0 +1,22 @@
+name: node
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  test:
+    name: create test report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            ref: ${{ github.head_ref }}
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+ #     - run: npm install
+ #     - run: npm test

@@ -2,9 +2,9 @@ name: Cucumber (with Godog)
 
 on:
   pull_request:
-  push:
-    branches:
-      - "main"
+ # push:
+ #   branches:
+ #     - "main"
 
 jobs:
   test:
@@ -28,7 +28,7 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '15'
 
        - name: Cache dependencies
            id: cache
