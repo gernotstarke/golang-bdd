@@ -48,7 +48,7 @@ func (sh *shopping) addProductToShelf(product string, price float64) (err error)
 }
 
 
-func InitializeScenario(ctx *godog.ScenarioContext) {
+func InitializeBasketScenario(ctx *godog.ScenarioContext) {
 	sh := &shopping{}
 
 	// runs before a scenario is tested
