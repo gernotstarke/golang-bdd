@@ -12,7 +12,7 @@ var options = {
     brandTitle: 'golang-bdd Cucumber Report',
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
-    launchReport: true,
+    launchReport: false,
     metadata: {
         "Platform": os.platform() + "-" + os.release(),
         "Executed": new Date(),
